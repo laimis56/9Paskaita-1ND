@@ -1,0 +1,106 @@
+html {
+  height: 100%
+}
+body{
+
+
+  background-color:#2f2b2b;
+  color: white;
+  font-family:Roboto;
+  font-size: 10px;
+
+}
+
+h1{
+
+  height:100px;
+  line-height: 38px;
+  margin: 0 auto;
+
+
+}
+
+.container{
+  height: 100vh;
+  display:flex;
+  flex-direction: column;
+
+  align-items:center;
+  justify-content:center;
+
+}
+
+.HOME{
+  overflow: hidden;
+    position: relative;
+    }
+.ABOUT{
+  overflow: hidden;
+    position: relative;
+    }
+.CONTACT{
+  overflow: hidden;
+    position: relative;
+    }
+.FAQ{
+  overflow: hidden;
+    position: relative;
+    }
+
+
+    h1::before {
+      content: "";
+      border-radius: 5px;
+      position: absolute;
+      top: 0;
+      left: ;
+      height: 40%;
+      width: 40%;
+      background:#b40000;
+      transform: translateX(-70px)
+      translateY(0%);
+      opacity:1;
+      transition: all 1s ease;
+      }
+
+      h1:hover:before{
+        opacity: 1;
+
+         height: 40%;
+         width:30%;
+         transform: translateX(160px)
+         translateY(0px);}
+
+
+
+         h1::after {
+           content: "";
+
+           position: absolute;
+           bottom: :0;
+           display: block;
+           right: 0;
+           height: 5px;
+           width: 0px;
+           background:#b40000;
+           z-index:0;
+           transform: translateX(0%)
+           translateY(0%);
+           opacity:0;
+           transition: all 1s ease;
+
+           }
+
+           h1:hover:after{
+             border-radius: 10px;
+             opacity: 1;
+             display:block;
+
+              height: 5px;
+              width:100%;
+              transform: translateX(0%)
+              translateY(0px);
+               transition-delay: 1s;
+              transition: all 1s ease-out;
+              transition-delay: 0.1s;
+            }
